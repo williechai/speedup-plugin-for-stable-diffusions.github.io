@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>SpeedUpNet's Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="baidu-site-verification" content="code-e1xK1OjkyT" />
+  <meta name="google-site-verification" content="6cWkRZ3d_BAnQ3clWn5Ws4FI0xOICQ-ydCzdydSapuY" />
+  <meta name="SpeedUpNet" content="SpeedUpNet: A Plug-and-Play Hyper-Network for Accelerating Text-to-Image Diffusion Models.">
+  <meta name="keywords" content="SpeedUpNet, speed up net, stable diffusion">
+  <meta name="author" content="Weilong Chai, DanDan Zheng, Jiajiong Cao, Zhiquan Chen, Changbao Wang, Chenguang Ma" />
+
+  <link rel="stylesheet" href="resource/w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <!--
+  <link rel="icon" type="image/png" href="resource/icons.png">
+  -->
+  <!--
+  <script src="jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  //-->
+
+</head>
+
+
+<body class="w3-content" style="max-width:1000px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h4><b>SpeedUpNet</b></h4>
+    <h4><b>(SUN)</b></h4>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">SpeedUpNet</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+    <div class="w3-container w3-center w3-padding-32" id="home">
+    	<h1>SpeedUpNet: A Plug-and-Play Hyper-Network for Accelerating Text-to-Image Diffusion Models</h1>
+
+      <p class="w3-center"></p>
+      Weilong Chai, DanDan Zheng, Jiajiong Cao, Zhiquan Chen, Changbao Wang, Chenguang Ma </h10>
+      </p>
+      <h4>Ant Group</h4>
+	      <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+	        Text-to-image diffusion models exhibit significant advancements while requiring extensive computational resources. To address this, we propose a novel and universal Stable-Diffusion (SD) acceleration module called SpeedUpNet(SUN). SUN can be directly plugged into various SD fine-tuned models without extra training. SUN significantly reduces the number of inference steps to just 4 steps and eliminates the need for classifier-free guidance, and it offers two extra advantages: (1) classifier-free guidance distillation with controllable negative prompts and (2) seamless integration into various fine-tuned Stable-Diffusion models without training.
+	      </p>
+	      <p class="w3-center">
+	        <a href="https://www.arxiv.org/">arXiv Paper</a> &nbsp/&nbsp
+	        <a href="https://github.com/williechai/speedup-plugin-for-stable-diffusions">GitHub Code</a> &nbsp
+	      </p>        
+        </tbody></table>
+  </div>
+ <!-- The Publications Section -->
+  <div class="w3-center">
+    <h2>Univeisial Acceleration Plugin</h2>
+    <img style="width: 80%;max-width: 720px" alt="profile photo" src="resource/guilin_sun.gif">
+
+<br> <br>
+<br> <br>
+<!-- End of Statcounter Code -->
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
